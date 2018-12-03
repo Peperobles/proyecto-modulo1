@@ -1,0 +1,5 @@
+//PRIMERO CARGAMOS LA FUNCION DE READY YA QUE LO CARGAREMOS EN EL HEAD;
+$(document).ready(function () {
+
+
+});
