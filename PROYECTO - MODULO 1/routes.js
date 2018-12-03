@@ -2,9 +2,13 @@
 var con = require('./config');
 var app = require('./app');
 
-
+//RUTA PARA INDEX - INICIO
 app.get('/', function (req, res) {
     res.render('index');
+})
+//RUTA PARA CLIENTES
+app.get('/datosclientes', function (req, res) {
+    res.render('datosclientes');
 })
 
 //INSERT EN BB.DD - Datos de clientes - CREATE
@@ -49,8 +53,25 @@ app.get('/clientes', function (req, res) {
 
 // ******************************************************OJO VER ANTES SI HAY QUE HACER VARIOS UPDATE, O VARIOS IF, DE MOMENTO LO DEJO PARA QUE SE SOBRESCRIBA TODO
 //PARA UPDATE DE REGISTROS 
+// app.post('/clientes/update', function (req, res) {
+//     let sql = `UPDATE clientes set nombre='${req.body.name}',apellido='${req.body.lastname}', telefono='${req.body.phone}', email='${req.body.email}', ciudad='${req.body.city}' where idcliente = '${req.body.id}'`;
+
+//     con.query(sql, function (err, result) {
+//         if (err) {
+//             res.send(err);
+//         }
+//         else {
+//             let cliente = {
+//                 //Como tengo que mostrarlo en el lado del cliente, tendre que modificarlo para que lo vea el usuario
+//                 nombre: req.body.name,
+//                 result: result
+//             }
+//             res.send(cliente);
+//         }
+//     });
+// });
 app.post('/clientes/update', function (req, res) {
-    let sql = `UPDATE clientes set nombre='${req.body.name}',apellido='${req.body.lastname}', telefono='${req.body.phone}', email='${req.body.email}', ciudad='${req.body.city}' where idcliente = '${req.body.id}'`;
+    let sql = `UPDATE clientes set nombre='${req.body.name}' where idcliente = '${req.body.id}'`;
 
     con.query(sql, function (err, result) {
         if (err) {
@@ -58,7 +79,6 @@ app.post('/clientes/update', function (req, res) {
         }
         else {
             let cliente = {
-                //Como tengo que mostrarlo en el lado del cliente, tendre que modificarlo para que lo vea el usuario
                 nombre: req.body.name,
                 result: result
             }
