@@ -5,33 +5,39 @@
 
 /* SHOWCASE */
 #showcase{
-    background-image: url(/img/foto1.jpg);
+    height: 50vh;
+    overflow: hidden;
+}
+#showcasebox{
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)),url(/img/foto1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    opacity: 0.7;
-}
-#showcasebox{
+    transition: all 0.8s ease;
     height: 50vh;
 }
+
+#showcasebox:hover{
+    transform: scale(1.2);
+}
+
 #showcasecontent{
-    /* border: 1px solid black; */
     margin-left: 10%;
     background-color: #f5f5f594;
 }
 
+
+
+
 /* OFERTAS */
 #ofertas{
-    /* height: 30vh; */
     margin-top: -2%;
 }
 #oferta1container{
     padding: 0px 3px 0px 0px;
 }
 #oferta1{
-    background-image: url(/img/foto2.jpg);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)),url(/img/foto2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,8 +50,7 @@
     padding: 0px 0px 0px 3px;
 }
 #oferta2{
-    background-image: url(/img/foto5.jpg);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,26 +59,119 @@
 
 /* NUESTROS PACKS */
 #pack1{
-    background-image: url(/img/foto4.jpg);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
 }
 #pack2{
-    background-image: url(/img/foto3.jpg);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
 }
 #pack3{
-    background-image: url(/img/foto-citas.jpg);
-    opacity: 0.7;
+    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto-citas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
+}
+
+
+
+
+
+
+/* ************************************************************ */
+/* POPUP */
+#popup1, #popup2, #popup3, #popup4, #popup5, #popup6 {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    display: none;
+}
+ 
+#content-popup1, #content-popup2, #content-popup3, #content-popup4, #content-popup5, #content-popup6 {
+    margin:0px auto;
+    margin-top: 15%;
+    position:relative;
+    padding: 10px;
+    width: 80%;
+    min-height: 30vh;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+    z-index: 1001;
+}
+ 
+#popup-overlay1, #popup-overlay2, #popup-overlay3, #popup-overlay4, #popup-overlay5, #popup-overlay6{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+/* MEDIA POPUPS */
+@media only screen and (max-width: 800px) {
+    /* body {
+        background-color: lightblue;
+    } */
+    #popup2, #popup3, #popup4, #popup5, #popup6 {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1001;
+        display: none;
+    }
+    #popup-overlay2, #popup-overlay3, #popup-overlay4, #popup-overlay5, #popup-overlay6{
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        display:none;
+        background-color: #777777;
+        cursor: pointer;
+        opacity: 0.7;
+    }  
+    #popup2{
+        top: 60vh;
+    }
+    #popup-overlay2{
+        top: 30vh
+    }
+    #popup3{
+        top: 90vh;
+    }
+    #popup-overlay3{
+        top: 60vh
+    }
+    #popup4{
+        top: 140vh;
+    }
+    #popup-overlay4{
+        top: 110vh
+    }
+    #popup5{
+        top: 200vh;
+    }
+    #popup-overlay5{
+        top: 180vh
+    }
+    #popup6{
+        top: 240vh;
+    }
+    #popup-overlay6{
+        top: 230vh
+    }
 }

@@ -28,8 +28,7 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Bebe
-            <span class="text-info">eco4D</span>
+        <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -68,103 +67,239 @@
             </ul>
         </div>
     </nav>
-    <!-- TARIFAS -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack Repito</h2>
-                            <h4>35€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-1.jpg" alt="" class="img-fluid">
+
+    <!-- Contenedor para evento on.click -->
+    <div id="contenedor">
+        <!-- POPUP -->
+        <div id="popup1" class="popup">
+            <div id="content-popup1">
+                <div>
+                    <h2>PACK REPITO</h2>
+                    <hr>
+                    <ul>
+                        <li>20 min</li>
+                        <li>Collage con 2 fotos</li>
+                        <li>Sonido corazón, peso y medida</li>
+                        <li>1 Canastilla regalo</li>
+                        <li>Valido si ya has estado con nosostros en el mismo embarazo</li>
+                        <li>No repetición</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay1" class="popup-overlay"></div>
+
+        <div id="popup2" class="popup">
+            <div id="content-popup2">
+                <div>
+                    <h2>PACK BASIC</h2>
+                    <hr>
+                    <ul>
+                        <li>20 min</li>
+                        <li>4 fotos impresas</li>
+                        <li>Collage con 2 fotos</li>
+                        <li>Sonido corazón, peso y medida</li>
+                        <li>2 Canastillas regalo</li>
+                        <li>*Regalo Bebeeco 4D</li>
+                        <li>No repetición</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay2" class="popup-overlay"></div>
+
+        <div id="popup3" class="popup">
+            <div id="content-popup3">
+                <div>
+                    <h2>PACK NIÑO/A</h2>
+                    <hr>
+                    <ul>
+                        <li>20 min</li>
+                        <li>2 Ecografias</li>
+                        <li>Sexo y confirmacion semanas 15 y 20</li>
+                        <li>Collage con 2 fotos en cada sesion</li>
+                        <li>Sonido corazón, peso y medida</li>
+                        <li>2 Canastillas regalo</li>
+                        <li>**Regalo Bebeeco 4D</li>
+                        <li>No repetición</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay3" class="popup-overlay"></div>
+
+        <div id="popup4" class="popup">
+            <div id="content-popup4">
+                <div>
+                    <h2>PACK COMPLETO</h2>
+                    <hr>
+                    <ul>
+                        <li>30 min</li>
+                        <li>8 fotos impresas</li>
+                        <li>Pen Drive con carpeta de fotos y sesión de video personalizado</li>
+                        <li>Collage con 2 fotos en cada sesion</li>
+                        <li>Sonido corazón, peso y medida</li>
+                        <li>2 Canastillas regalo</li>
+                        <li>**Regalo Bebeeco 4D</li>
+                        <li>Repetición</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay4" class="popup-overlay"></div>
+
+        <div id="popup5" class="popup">
+            <div id="content-popup5">
+                <div>
+                    <h2>PACK EVOLUCION</h2>
+                    <hr>
+                    <ul>
+                        <li>1ª SESION</li>
+                        <li>(17 semanas)</li>
+                        <li>2 fotos en collage</li>
+                        <li>Sonido corazón, peso y medida</li>
+                        <li>Canastilla regalo</li>
+                        <li>2ª SESION</li>
+                        <li>(27 semanas)</li>
+                        <li>8 fotos impresas</li>
+                        <li>Pen Drive: video de la 1ª y 2ª sesion</li>
+                        <li>Video-montaje de fotos</li>
+                        <li>Canastilla regalo</li>
+                        <li>****Regalo Bebeeco 4D</li>
+                        <li>Repetición en la 2ªsesion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay5" class="popup-overlay"></div>
+
+        <div id="popup6" class="popup">
+            <div id="content-popup6">
+                <div>
+                    <h2>PACK EVOLUCION PLUS</h2>
+                    <hr>
+                    <ul>
+                        <li>1ª SESION</li>
+                        <li>(17 semanas)</li>
+                        <li>2 fotos en collage</li>
+                        <li>Canastilla regalo</li>
+                        <li>2ª SESION</li>
+                        <li>(22 semanas)</li>
+                        <li>4 fotos impresas</li>
+                        <li>Canastilla regalo</li>
+                        <li>3ª SESION</li>
+                        <li>(27 Semanas)</li>
+                        <li>8 fotos impresas</li>
+                        <li>Collage especial con fotos de las sesiones y del bebé nacido</li>
+                        <li>Pen Drive: video de la 1ª, 2ªy 3ª sesion</li>
+                        <li>Video-montaje de fotos</li>
+                        <li>Canastilla regalo</li>
+                        <li>Repetición en la 3ªsesion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-overlay6" class="popup-overlay"></div>
+
+
+        <!-- TARIFAS -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack Repito</h2>
+                                <h4>35€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="1">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-1.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack Basic</h2>
-                            <h4>55€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-2.jpg" alt="" class="img-fluid">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack Basic</h2>
+                                <h4>55€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="2">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-2.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack ¿Niño/a?</h2>
-                            <h4>85€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-3.jpg" alt="" class="img-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack ¿Niño/a?</h2>
+                                <h4>85€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="3">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-3.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack Completo</h2>
-                            <h4>90€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-4.jpg" alt="" class="img-fluid">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack Completo</h2>
+                                <h4>90€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="4">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-4.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack Evolución</h2>
-                            <h4>130€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-5.jpg" alt="" class="img-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack Evolución</h2>
+                                <h4>130€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="5">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-5.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="container bg-light p-3 m-3">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <h2>Pack Evolución Plus</h2>
-                            <h4>150€</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
-                            <button class="btn btn-outline-info m-3">Que incluye</button>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img/foto-tarifas-6.jpg" alt="" class="img-fluid">
+                <div class="col-12 col-md-6">
+                    <div class="container bg-light p-3 m-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>Pack Evolución Plus</h2>
+                                <h4>150€</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam?</p>
+                                <button class="btn btn-outline-info m-3 open" id="6">Que incluye</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="img/foto-tarifas-6.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
