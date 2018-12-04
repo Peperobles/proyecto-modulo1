@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="js/lib/jquery-ui.theme.min.css">
     <!-- LA LIBRERIA DE UI- MIN -->
     <script src="js/lib/jquery-ui.min.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
 
     <!-- POR ULTIMO NUESTRO JS Y CSS o BOOTSTRAP -->
     <script src="js/bebeeco.js"></script>
@@ -26,6 +27,47 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Informacion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/informacion">¿Que es 4D?</a>
+                        <a class="dropdown-item" href="/informacion">¿Alguna Duda?</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Franquiciate</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarifas">Tarifas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/datosclientes">Clientes
+                            <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- CLIENTES -->
     <div class="container">
         <h2 class="text-center">Clientes</h2>
         <table class="table table-responsive table-striped">
@@ -45,6 +87,55 @@
             </tbody>
         </table>
     </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid bg-light">
+            <div class="row text-muted text-center p-3">
+                <div class="col-12 col-md-4 p-3">
+                    <h6>CONTACTO</h6>
+                    <p>Tlf.:
+                        <span class="text-info">999-999-999</span>
+                    </p>
+                    <p>email:
+                        <span class="text-info">info@bebeeco4d.com</span>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <h6>REDES</h6>
+                    <a href="#">
+                        <img src="img/icon/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <h6>MENU</h6>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-info" href="/">Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-info" href="/informacion">
+                                Informacion
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/tarifas">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="datosclientes">Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

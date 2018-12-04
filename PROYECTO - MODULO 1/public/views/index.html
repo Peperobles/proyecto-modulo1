@@ -28,31 +28,34 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Inicio
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Informacion
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">¿Que es 4D?</a>
-            <a class="dropdown-item" href="#">¿Alguna Duda?</a>
+            <a class="dropdown-item" href="/informacion">¿Que es 4D?</a>
+            <a class="dropdown-item" href="/informacion">¿Alguna Duda?</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Franquiciate</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tarifas</a>
+          <a class="nav-link" href="/tarifas">Tarifas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contacto</a>
@@ -69,7 +72,11 @@
       <div class="col-6 col-md-4 text-center" id="showcasecontent">
         <h3>ECOGRAFIAS</h3>
         <h4>EMOCIONALES 4D</h4>
-        <p><sup>__</sup><small>EXPERIENCIA UNICA</small><sup>__</sup></p>
+        <p>
+          <sup>__</sup>
+          <small>EXPERIENCIA UNICA</small>
+          <sup>__</sup>
+        </p>
         <button class="btn btn-info m-1">SABER MÁS</button>
       </div>
     </div>
@@ -115,18 +122,18 @@
   <hr>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="container align-self-center" id="pack1">
-          <h4>PACK NIÑO/NIÑA</h4>
+      <div class="col-12 col-md-4 p-1">
+        <div class="d-flex justify-content-center align-items-center" id="pack1">
+          <h4 class="text-center">PACK NIÑO/NIÑA</h4>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="container " id="pack2">
+      <div class="col-12 col-md-4 p-1">
+        <div class="d-flex justify-content-center align-items-center" id="pack2">
           <h4>PACK COMPLETO</h4>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="container" id="pack3">
+      <div class="col-12 col-md-4 p-1">
+        <div class="d-flex justify-content-center align-items-center" id="pack3">
           <h4>PACK EVOLUCION</h4>
         </div>
       </div>
@@ -135,25 +142,25 @@
   <!-- EXPERIENCIA BEBEECO4D -->
   <hr>
   <div class="container-fluid bg-info">
-    <div class="row text-white">
+    <div class="row text-white text-center">
       <div class="col-12 col-md-3">
-        <i>ICONO</i>
-        <h4>LOREM</h4>
+        <img src="img/icon/pregnant.png" alt="">
+        <h4>Experiencia Unica</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
       </div>
       <div class="col-12 col-md-3">
-        <i>ICONO</i>
-        <h4>LOREM</h4>
+        <img src="img/icon/house.png" alt="">
+        <h4>Vivelo en casa</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
       </div>
       <div class="col-12 col-md-3">
-        <i>ICONO</i>
-        <h4>LOREM</h4>
+        <img src="img/icon/video.png" alt="">
+        <h4>Imagen real</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
       </div>
       <div class="col-12 col-md-3">
-        <i>ICONO</i>
-        <h4>LOREM</h4>
+        <img src="img/icon/warranty.png" alt="">
+        <h4>Garantia</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
       </div>
     </div>
@@ -161,21 +168,48 @@
   <!-- FOOTER -->
   <footer>
     <div class="container-fluid bg-light">
-      <div class="row text-muted">
-        <div class="col-12 col-md-4">
+      <div class="row text-muted text-center p-3">
+        <div class="col-12 col-md-4 p-3">
           <h6>CONTACTO</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+          <p>Tlf.:
+            <span class="text-info">999-999-999</span>
+          </p>
+          <p>email:
+            <span class="text-info">info@bebeeco4d.com</span>
+          </p>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 p-3">
           <h6>REDES</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+          <a href="#">
+            <img src="img/icon/facebook.png" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="img/icon/twitter.png" alt="twitter">
+          </a>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 p-3">
           <h6>MENU</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-info" href="/">Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-info" href="/informacion">
+                Informacion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="/tarifas">Tarifas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="datosclientes">Clientes</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

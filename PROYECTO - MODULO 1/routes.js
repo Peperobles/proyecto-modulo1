@@ -11,6 +11,15 @@ app.get('/datosclientes', function (req, res) {
     res.render('datosclientes');
 })
 
+//RUTA PARA INFORMACION
+app.get('/informacion', function (req, res) {
+    res.render('informacion');
+})
+//RUTA PARA TARIFAS
+app.get('/tarifas', function (req, res) {
+    res.render('tarifas');
+})
+
 //INSERT EN BB.DD - Datos de clientes - CREATE
 
 app.post('/clientes/add', function (req, res) {
