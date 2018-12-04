@@ -2,62 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bebeeco 4D</title>
-    <!-- PRIMERO TODA LA LIBRERIA DE JQUERY -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bebeeco 4D</title>
+  <!-- PRIMERO TODA LA LIBRERIA DE JQUERY -->
 
-    <script src="js/lib/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="js/lib/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="js/lib/jquery-ui.theme.min.css">
-    <!-- LA LIBRERIA DE UI- MIN -->
-    <script src="js/lib/jquery-ui.min.js"></script>
-    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="js/lib/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="js/lib/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/lib/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="js/lib/jquery-ui.theme.min.css">
+  <!-- LA LIBRERIA DE UI- MIN -->
+  <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/bootstrap/bootstrap.min.js"></script>
 
-    <!-- POR ULTIMO NUESTRO JS Y CSS o BOOTSTRAP -->
-    <script src="js/bebeeco.js"></script>
+  <!-- POR ULTIMO NUESTRO JS Y CSS o BOOTSTRAP -->
+  <script src="js/bebeeco.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-    <h1>hola</h1>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Informacion
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">¿Que es 4D?</a>
+            <a class="dropdown-item" href="#">¿Alguna Duda?</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Franquiciate</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tarifas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="datosclientes">Clientes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- SHOWCASE -->
+  <div class="container-fluid" id="showcase">
+    <div class="row align-items-center" id="showcasebox">
+      <div class="col-6 col-md-4 text-center" id="showcasecontent">
+        <h3>ECOGRAFIAS</h3>
+        <h4>EMOCIONALES 4D</h4>
+        <p><sup>__</sup><small>EXPERIENCIA UNICA</small><sup>__</sup></p>
+        <button class="btn btn-info m-1">SABER MÁS</button>
+      </div>
+    </div>
+  </div>
+  <!-- OFERTAS -->
+  <div class="container-fluid" id="ofertas">
+    <div class="row align-items-center" id="">
+      <div class="col-12 col-md-6" id="oferta1container">
+        <div class="col-12 text-left" id="oferta1">
+          <div class="container" id="oferta1content">
+            <h4>Ecografía desde</h4>
+            <h3>55 €</h3>
+            <p>¡OFERTA LIMITADA!</p>
+            <button class="btn btn-info m-1">MÁS INFO</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6" id="oferta2container">
+        <div class="text-left" id="oferta2">
+          <div class="container text-white" id="oferta2content">
+            <h4>Se repite video</h4>
+            <h3>GRATIS</h3>
+            <p>Si no se deja ver</p>
+            <button class="btn btn-info m-1">MÁS INFO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTACTAMOS CONTIGO -->
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>¿NECESITAS MÁS INFORMACIÓN?</h2>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-info btn-lg btn-block">CONTACTAMOS CONTIGO</button>
+      </div>
+    </div>
+  </div>
+  <!-- NUESTROS PACKS -->
+  <hr>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="container align-self-center" id="pack1">
+          <h4>PACK NIÑO/NIÑA</h4>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="container " id="pack2">
+          <h4>PACK COMPLETO</h4>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="container" id="pack3">
+          <h4>PACK EVOLUCION</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- EXPERIENCIA BEBEECO4D -->
+  <hr>
+  <div class="container-fluid bg-info">
+    <div class="row text-white">
+      <div class="col-12 col-md-3">
+        <i>ICONO</i>
+        <h4>LOREM</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <i>ICONO</i>
+        <h4>LOREM</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <i>ICONO</i>
+        <h4>LOREM</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <i>ICONO</i>
+        <h4>LOREM</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid bg-light">
+      <div class="row text-muted">
+        <div class="col-12 col-md-4">
+          <h6>CONTACTO</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h6>REDES</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h6>MENU</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aut.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad?</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

@@ -1,1 +1,83 @@
 /* ESTILOS CSS */
+
+/* NAVBAR */
+
+body > nav > a > img{
+    height: 140px;
+}
+
+
+/* SHOWCASE */
+#showcase{
+    background-image: url(/img/foto1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    opacity: 0.7;
+}
+#showcasebox{
+    height: 50vh;
+}
+#showcasecontent{
+    /* border: 1px solid black; */
+    margin-left: 10%;
+    background-color: #f5f5f594;
+}
+
+/* OFERTAS */
+#ofertas{
+    /* height: 30vh; */
+    margin-top: -2%;
+}
+#oferta1container{
+    padding: 0px 3px 0px 0px;
+}
+#oferta1{
+    background-image: url(/img/foto2.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+#oferta1content, #oferta2content{
+    margin-top: 5%;
+}
+#oferta2container{
+    padding: 0px 0px 0px 3px;
+}
+#oferta2{
+    background-image: url(/img/foto5.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+/* NUESTROS PACKS */
+#pack1{
+    background-image: url(/img/foto4.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+#pack2{
+    background-image: url(/img/foto3.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+#pack3{
+    background-image: url(/img/foto-citas.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
