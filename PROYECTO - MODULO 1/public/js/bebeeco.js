@@ -18,4 +18,14 @@ $(document).ready(function () {
             return false;
         });
 
+        $('#sabermas').on('click', function(){
+            window.location = "/informacion";
+        })
+
+        $('.masinfo').on('click', function(){
+            window.location = "/tarifas";
+        })
+        $('#contactamoscontigo').on('click', function(){
+            window.location = "/contacto";
+        })
 });

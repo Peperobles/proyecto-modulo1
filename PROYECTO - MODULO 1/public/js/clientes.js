@@ -7,8 +7,8 @@ $(document).ready(function () {
     //Hago el get segun la consulta realizada en routes
     $.get('http://localhost:3000/clientes/', function (clientes) {
         clientes.forEach(cliente => {
-            lista.append('<tr id="' + cliente.idclientes + '">'
-                + '<th scope = "row">' + cliente.idclientes + '</th>'
+            lista.append('<tr id="' + cliente.idcliente + '">'
+                + '<th scope = "row">' + cliente.idcliente + '</th>'
                 + '<td>' + cliente.nombre + '</td>'
                 + '<td>' + cliente.apellido + '</td>'
                 + '<td>' + cliente.telefono + '</td>'

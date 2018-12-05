@@ -1,7 +1,11 @@
 /* ESTILOS CSS */
 
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+*{
+    font-family: 'Patrick Hand', cursive;
+}
 /* NAVBAR */
-
 
 /* SHOWCASE */
 #showcase{
@@ -25,9 +29,6 @@
     margin-left: 10%;
     background-color: #f5f5f594;
 }
-
-
-
 
 /* OFERTAS */
 #ofertas{
@@ -58,34 +59,97 @@
 }
 
 /* NUESTROS PACKS */
-#pack1{
-    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #17a2b8;
 }
-#pack2{
-    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
+  
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 50px 20px;
 }
-#pack3{
-    background-image: linear-gradient(rgba(255, 251, 251, 0.5), rgba(255, 255, 255, 0.25)), url(/img/foto-citas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
+  
+.hovereffect img {
+    display: block;
+    position: relative;
+    max-width: none;
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.hovereffect:hover img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+  
+.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+    background-color: transparent;
+}
+  
+.hovereffect h2:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+  
+.hovereffect:hover h2:after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+  
+.hovereffect a, .hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+  
+.hovereffect:hover a, .hovereffect:hover p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 
 
 
 
-
-/* ************************************************************ */
 /* POPUP */
 #popup1, #popup2, #popup3, #popup4, #popup5, #popup6 {
     left: 0;

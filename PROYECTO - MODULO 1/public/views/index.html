@@ -28,7 +28,7 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Bebe<span class="text-info">eco4D</span>
+    <a class="navbar-brand" href="/">Bebe<span class="text-info">eco4D</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
           <a class="nav-link" href="/tarifas">Tarifas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="/contacto">Contacto</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="datosclientes">Clientes</a>
@@ -77,20 +77,20 @@
           <small>EXPERIENCIA UNICA</small>
           <sup>__</sup>
         </p>
-        <button class="btn btn-info m-1">SABER MÁS</button>
+        <button class="btn btn-info m-1" id="sabermas">SABER MÁS</button>
       </div>
     </div>
   </div>
   <!-- OFERTAS -->
   <div class="container-fluid" id="ofertas">
-    <div class="row align-items-center" id="">
+    <div class="row align-items-center">
       <div class="col-12 col-md-6" id="oferta1container">
         <div class="col-12 text-left" id="oferta1">
           <div class="container" id="oferta1content">
             <h4>Ecografía desde</h4>
             <h3>55 €</h3>
             <p>¡OFERTA LIMITADA!</p>
-            <button class="btn btn-info m-1">MÁS INFO</button>
+            <button class="btn btn-info m-1 masinfo">MÁS INFO</button>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
             <h4>Se repite video</h4>
             <h3>GRATIS</h3>
             <p>Si no se deja ver</p>
-            <button class="btn btn-info m-1">MÁS INFO</button>
+            <button class="btn btn-info m-1 masinfo">MÁS INFO</button>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
         <h2>¿NECESITAS MÁS INFORMACIÓN?</h2>
       </div>
       <div class="col-12 text-center">
-        <button class="btn btn-info btn-lg btn-block">CONTACTAMOS CONTIGO</button>
+        <button class="btn btn-info btn-lg btn-block" id="contactamoscontigo">CONTACTAMOS CONTIGO</button>
       </div>
     </div>
   </div>
@@ -123,22 +123,41 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-4 p-1">
-        <div class="d-flex justify-content-center align-items-center" id="pack1">
-          <h4 class="text-center">PACK NIÑO/NIÑA</h4>
+        <div class="hovereffect">
+          <img src="/img/foto4.jpg" alt="img1" class="img-responsive">
+          <div class="overlay d-flex flex-column justify-content-center align-items-center">
+            <h2>PACK NIÑO/NIÑA</h2>
+            <p>
+              <a href="/informacion">MAS INFO</a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-4 p-1">
-        <div class="d-flex justify-content-center align-items-center" id="pack2">
-          <h4>PACK COMPLETO</h4>
+        <div class="hovereffect">
+          <img src="/img/foto-tarifas-1.jpg" alt="img1" class="img-responsive">
+          <div class="overlay d-flex flex-column justify-content-center align-items-center">
+            <h2>PACK COMPLETO</h2>
+            <p>
+              <a href="/informacion">MAS INFO</a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="col-12 col-md-4 p-1">
-        <div class="d-flex justify-content-center align-items-center" id="pack3">
-          <h4>PACK EVOLUCION</h4>
+        <div class="hovereffect">
+          <img src="/img/foto-citas.jpg" alt="img1" class="img-responsive">
+          <div class="overlay d-flex flex-column justify-content-center align-items-center">
+            <h2>PACK EVOLUCION</h2>
+            <p>
+              <a href="/informacion">MAS INFO</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- EXPERIENCIA BEBEECO4D -->
   <hr>
   <div class="container-fluid bg-info">
@@ -146,22 +165,22 @@
       <div class="col-12 col-md-3">
         <img src="img/icon/pregnant.png" alt="">
         <h4>Experiencia Unica</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+        <p>Una experiencia inolvidable y única para ti y tu familia.</p>
       </div>
       <div class="col-12 col-md-3">
         <img src="img/icon/house.png" alt="">
         <h4>Vivelo en casa</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+        <p>Posibilidad de realizar ecografia en tu propio hogar.</p>
       </div>
       <div class="col-12 col-md-3">
         <img src="img/icon/video.png" alt="">
         <h4>Imagen real</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+        <p>Disfruta a tiempo real de tu bebe, apreciando cada detalle.</p>
       </div>
       <div class="col-12 col-md-3">
         <img src="img/icon/warranty.png" alt="">
         <h4>Garantia</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, id?</p>
+        <p>Con la garantia de Bebeeco4D, empresa con largo recorrido.</p>
       </div>
     </div>
   </div>
@@ -190,9 +209,8 @@
         <div class="col-12 col-md-4 p-3">
           <h6>MENU</h6>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link text-info" href="/">Inicio
-                <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item ">
@@ -204,7 +222,7 @@
               <a class="nav-link text-info" href="/tarifas">Tarifas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-info" href="#">Contacto</a>
+              <a class="nav-link text-info" href="/contacto">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-info" href="datosclientes">Clientes</a>
@@ -214,7 +232,7 @@
       </div>
     </div>
   </footer>
-  
+
 
 </body>
 

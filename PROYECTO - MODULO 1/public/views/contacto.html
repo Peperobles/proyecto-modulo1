@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto | Bebeeco 4D</title>
+    <!-- PRIMERO TODA LA LIBRERIA DE JQUERY -->
+
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/lib/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/lib/jquery-ui.theme.min.css">
+    <!-- LA LIBRERIA DE UI- MIN -->
+    <script src="js/lib/jquery-ui.min.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+
+    <!-- POR ULTIMO NUESTRO JS Y CSS o BOOTSTRAP -->
+    <script src="js/contacto.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Bebe<span class="text-info">eco4D</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Inicio
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Informacion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/informacion">¿Que es 4D?</a>
+                        <a class="dropdown-item" href="/informacion">¿Alguna Duda?</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Franquiciate</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarifas">Tarifas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/contacto">Contacto
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="datosclientes">Clientes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-info text-center">CONTACTA CON NOSOTROS</h2>
+        <p class="text-center">Visitanos o contacta con nosotros en el teléfono <span class="text-info">666-666-666</span>
+            o en el mail <span class="text-info">info@bebeeco4d.com</span></p>
+        <p class="text-center">Introduce tus datos personales y nos pondremos en contacto contigo.</p>
+        <hr>
+        <div class="row">
+            <!-- FORMULARIO -->
+            <div class="col-12 col-md-8">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre"
+                                required>
+                            <div class="invalid-feedback">
+                                Introduce un nombre valido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"
+                                required>
+                            <div class="invalid-feedback">
+                                Introduce un apellido valido.
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="validationCustomUsername">Email</label>
+                            <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Introduce un email valido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">Teléfono</label>
+                            <input type="number" class="form-control" id="validationCustom03" placeholder="Telefono"
+                                required>
+                            <div class="invalid-feedback">
+                                Introduce un número valido.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom04">Ciudad</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="Ciudad"
+                                required>
+                            <div class="invalid-feedback">
+                                Introduce una ciudad valida.
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-info" type="submit" id="enviar">Enviar</button>
+                </form>
+            </div>
+
+
+            <!-- MAPA -->
+            <div class="col-12 col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12792.644531148222!2d-4.4326388!3d36.7186912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e3d2fd568c94146!2sBebeeco+4D+(Ecograf%C3%ADas+Emocionales+4D%2F5D)!5e0!3m2!1ses!2sus!4v1543961907247"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid bg-light">
+            <div class="row text-muted text-center p-3">
+                <div class="col-12 col-md-4 p-3">
+                    <h6>CONTACTO</h6>
+                    <p>Tlf.:
+                        <span class="text-info">999-999-999</span>
+                    </p>
+                    <p>email:
+                        <span class="text-info">info@bebeeco4d.com</span>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <h6>REDES</h6>
+                    <a href="#">
+                        <img src="img/icon/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <h6>MENU</h6>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/">Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-info" href="/informacion">
+                                Informacion
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/tarifas">Tarifas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="/contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="datosclientes">Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
