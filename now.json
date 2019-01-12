@@ -1,7 +1,11 @@
 {
     "version": 2,
     "name": "nodejs-express",
+    "builds": [
+        { "src": "*.html", "use": "@now/static" },
+        { "src": "*.js", "use": "@now/node" }
+    ]
     "routes": [
-        { "src": "/", "methods": ["POST"], "dest": "/index" }
+        { "src": "/", "methods": ["GET"], "dest": "/index.html" }
     ]
 }
