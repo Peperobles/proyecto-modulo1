@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 1,
     "name": "nodejs-express",
     "builds": [
         { "src": "index.js", "use": "@now/node-server" }
