@@ -1,1 +1,11 @@
-{}
+{
+    "version": 2,
+    "name": "nodejs-express",
+    "builds": [
+        { "src": "index.js", "use": "@now/node-server" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "index.js" },
+        { "src": "/", "methods": ["POST"], "dest": "/index" },
+    ]
+}
